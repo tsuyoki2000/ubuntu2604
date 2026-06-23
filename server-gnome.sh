@@ -24,6 +24,10 @@ echo "===== Firefox ReInstall ====="
 sudo snap remove firefox
 sudo snap install firefox
 
+# 追加アプリ
+echo "===== Add Application ====="
+sudo apt install file-roller
+
 # パッケージのゴミを削除
 echo "===== Auto remove ====="
 sudo apt autoremove -y
