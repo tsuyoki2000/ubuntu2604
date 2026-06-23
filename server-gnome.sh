@@ -26,7 +26,7 @@ sudo snap install firefox
 
 # 追加アプリ
 echo "===== Add Application ====="
-sudo apt install file-roller
+#sudo apt install file-roller
 
 # パッケージのゴミを削除
 echo "===== Auto remove ====="
