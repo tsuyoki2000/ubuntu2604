@@ -20,9 +20,19 @@ sudo apt install ubuntu-desktop-minimal language-pack-ja language-pack-gnome-ja 
 
 # Firefoxが文字化けするので再インストール
 # （apt ではなく、snap でインストールされている）
-echo "===== Firefox ReInstall ====="
+echo "===== ReInstall Firefox ====="
 sudo snap remove firefox
 sudo snap install firefox
+
+# Fcitx5-mozc のインストール
+echo "===== Install Fcitx5 ====="
+sudo apt install fcitx5-mozc -y
+## キーボード入力に使うIMシステムを Fcitx 5 に変更
+im-config -n fcitx5
+## スタートアップを設定する（設定しないと GNOME が iBus を起動する）
+mkdir -p ~/.config/autostart
+cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart
+
 
 # 追加アプリ
 echo "===== Add Application ====="
