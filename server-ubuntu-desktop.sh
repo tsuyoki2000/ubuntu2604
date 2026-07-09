@@ -36,7 +36,7 @@ cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart
 
 # 追加アプリ
 echo "===== Add Application ====="
-#sudo apt install file-roller
+#sudo apt install file-roller gnome-shell-extension-manager
 curl -fsS https://dl.brave.com/install.sh | sh
 
 # パッケージのゴミを削除
