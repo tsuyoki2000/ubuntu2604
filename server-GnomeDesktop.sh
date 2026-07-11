@@ -22,3 +22,10 @@ sudo apt install gnome-session gdm3 gnome-terminal fonts-noto-cjk language-pack-
 # gnome-terminal：GNOME標準ターミナル（他のターミナルでもOK。gnome-session はターミナルをインストールしない。）
 # fonts-noto-cjk：日本語フォント（これだけでターミナル内は日本語表示できる）
 # language-pack-gnome-ja（GNOMEデスクトップ向け日本語翻訳パック。language-pack-ja も依存でインストールされる）
+
+# パッケージのゴミを削除
+echo "===== Auto remove ====="
+sudo apt autoremove -y
+
+# 再起動
+reboot
