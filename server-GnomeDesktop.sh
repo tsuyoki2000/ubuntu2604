@@ -23,6 +23,10 @@ sudo apt install gnome-session gdm3 gnome-terminal fonts-noto-cjk language-pack-
 # fonts-noto-cjk：日本語フォント（これだけでターミナル内は日本語表示できる）
 # language-pack-gnome-ja（GNOMEデスクトップ向け日本語翻訳パック。language-pack-ja も依存でインストールされる）
 
+# ブラウザ
+echo "===== Install Browser ====="
+curl -fsS https://dl.brave.com/install.sh | sh
+
 # パッケージのゴミを削除
 echo "===== Auto remove ====="
 sudo apt autoremove -y
