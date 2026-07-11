@@ -23,6 +23,10 @@ sudo apt install gnome-session gdm3 gnome-terminal fonts-noto-cjk language-pack-
 # fonts-noto-cjk：日本語フォント（これだけでターミナル内は日本語表示できる）
 # language-pack-gnome-ja（GNOMEデスクトップ向け日本語翻訳パック。language-pack-ja も依存でインストールされる）
 
+# 電源メニューに「ログアウト」項目を表示
+echo "===== Show Logout Menu ====="
+gsettings set org.gnome.shell always-show-log-out true
+
 # ブラウザ
 echo "===== Install Browser ====="
 curl -fsS https://dl.brave.com/install.sh | sh
